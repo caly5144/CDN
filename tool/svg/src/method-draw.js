@@ -32,9 +32,9 @@
       initFill: {color: 'fff', opacity: 1},
       initStroke: {width: 1.5, color: '000', opacity: 1},
       initOpacity: 1,
-      imgPath: 'images/',
-      extPath: 'extensions/',
-      jGraduatePath: 'lib/jgraduate/images/',
+      imgPath: 'https://cdn.jsdelivr.net/gh/caly5144/CDN/tool/svg/images/',
+      extPath: 'https://cdn.jsdelivr.net/gh/caly5144/CDN/tool/svg/extensions/',
+      jGraduatePath: 'https://cdn.jsdelivr.net/gh/caly5144/CDN/tool/svg/lib/jgraduate/images/',
       extensions: [],
       initTool: 'select',
       wireframe: false,
@@ -313,7 +313,7 @@
                  ],
         isMac = (navigator.platform.indexOf("Mac") >= 0),
         isWebkit = (navigator.userAgent.indexOf("AppleWebKit") >= 0),
-        modKey = (isMac ? "meta+" : "ctrl+"), // ⌘
+        modKey = (isMac ? "meta+" : "ctrl+"), // âŒ˜
         path = svgCanvas.pathActions,
         undoMgr = svgCanvas.undoMgr,
         Utils = svgedit.utilities,
@@ -330,7 +330,7 @@
       if (!isMac) {
        $('.shortcut').each(function(){
          var text = $(this).text();
-         $(this).text(text.split("⌘").join("Ctrl+"))
+         $(this).text(text.split("âŒ˜").join("Ctrl+"))
        }); 
       }
 
@@ -3166,7 +3166,7 @@
               var res = svgCanvas.getResolution()
               $('#canvas_width').val(res.w.toFixed())
               $('#canvas_height').val(res.h.toFixed())
-              $('#resolution_label').html("<div class='pull'>" + res.w + "<span>×</span></br>" + res.h + "</div>");
+              $('#resolution_label').html("<div class='pull'>" + res.w + "<span>Ã—</span></br>" + res.h + "</div>");
             }
             else {
               requestAnimationFrame(animateCanvasSize)
