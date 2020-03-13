@@ -10556,9 +10556,9 @@ $.SvgCanvas = function(a, o) {
                 opacity: 1
             },
             initOpacity: 1,
-            imgPath: "images/",
-            extPath: "extensions/",
-            jGraduatePath: "jgraduate/images/",
+            imgPath: "https://cdn.jsdelivr.net/gh/caly5144/CDN/tool/svg/images/",
+            extPath: "https://cdn.jsdelivr.net/gh/caly5144/CDN/tool/svg/extensions/",
+            jGraduatePath: "https://cdn.jsdelivr.net/gh/caly5144/CDN/tool/svg/jgraduate/images/",
             extensions: [],
             initTool: "select",
             wireframe: false,
