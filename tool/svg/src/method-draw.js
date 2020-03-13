@@ -313,7 +313,7 @@
                  ],
         isMac = (navigator.platform.indexOf("Mac") >= 0),
         isWebkit = (navigator.userAgent.indexOf("AppleWebKit") >= 0),
-        modKey = (isMac ? "meta+" : "ctrl+"), // ⌘
+        modKey = (isMac ? "meta+" : "ctrl+"), // âŒ˜
         path = svgCanvas.pathActions,
         undoMgr = svgCanvas.undoMgr,
         Utils = svgedit.utilities,
@@ -330,7 +330,7 @@
       if (!isMac) {
        $('.shortcut').each(function(){
          var text = $(this).text();
-         $(this).text(text.split("⌘").join("Ctrl+"))
+         $(this).text(text.split("âŒ˜").join("Ctrl+"))
        }); 
       }
 
@@ -3166,7 +3166,7 @@
               var res = svgCanvas.getResolution()
               $('#canvas_width').val(res.w.toFixed())
               $('#canvas_height').val(res.h.toFixed())
-              $('#resolution_label').html("<div class='pull'>" + res.w + "<span>×</span></br>" + res.h + "</div>");
+              $('#resolution_label').html("<div class='pull'>" + res.w + "<span>Ã—</span></br>" + res.h + "</div>");
             }
             else {
               requestAnimationFrame(animateCanvasSize)
