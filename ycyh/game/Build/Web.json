@@ -2,7 +2,7 @@
 "companyName": "DefaultCompany",
 "productName": "YH520",
 "productVersion": "0.1",
-"dataUrl": "https://cdn.jsdelivr.net/gh/caly5144/CDN/ycyh/game/Build/Web.data.unityweb",
+"dataUrl": "https://github.com/caly5144/CDN/ycyh/game/Build/Web.data.unityweb",
 "wasmCodeUrl": "Web.wasm.code.unityweb",
 "wasmFrameworkUrl": "Web.wasm.framework.unityweb",
 "graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
