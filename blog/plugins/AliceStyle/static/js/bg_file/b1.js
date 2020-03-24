@@ -1,7 +1,7 @@
-document.writeln("<canvas id=\'bubbles\' style=\'top: 0;left: 0;position: fixed;width: 100%;height: 100%;z-index: -1;background: linear-gradient(to top, #c8e8f8, #2595f2);\'></canvas> ");
+document.writeln("<canvas id=\'bg_canvas\' style=\'top: 0;left: 0;position: fixed;width: 100%;height: 100%;z-index: -1;background: linear-gradient(to top, #c8e8f8, #2595f2);\'></canvas> ");
 
 // Canvas Init
-var c = document.getElementById('bubbles'),
+var c = document.getElementById('bg_canvas'),
   ctx = c.getContext('2d'),
   width = window.innerWidth,
   height = window.innerHeight,

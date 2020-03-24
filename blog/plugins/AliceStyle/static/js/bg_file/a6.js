@@ -1,6 +1,6 @@
-document.writeln("<canvas id=\'canvas\' style=\'top: 0;left: 0;position: fixed;width: 100%;height: 100%;z-index: -1;display: block; background: rgb(56, 163, 179);\'></canvas> ");
+document.writeln("<canvas id=\'bg_canvas\' style=\'top: 0;left: 0;position: fixed;width: 100%;height: 100%;z-index: -1;display: block; background: rgb(56, 163, 179);\'></canvas> ");
 
-var can = document.getElementById("canvas");
+var can = document.getElementById("bg_canvas");
 		//设置2d绘图环境
 		var ctx = can.getContext("2d");
 
@@ -83,7 +83,8 @@ var can = document.getElementById("canvas");
 		//实例初始化
 		setInterval(function () {
 			//绘制一个透明层
-			ctx.fillStyle = "rgba(56,163,179,0.1)";
+			ctx.id = "rainbow";
+			ctx.fillStyle = "rgba(129, 135, 255, 0.44)";
 			ctx.fillRect(0, 0, w, h);
 			for (var i = 0; i < drops.length; i++) {
 				drops[i].draw();

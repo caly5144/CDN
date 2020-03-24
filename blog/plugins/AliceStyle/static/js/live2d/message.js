@@ -61,12 +61,12 @@ if(!norunFlag){
 		});
 		
 		function initTips(){
-			var msgType = '../message.json';
+			var msgType = 'json/message.json';
 			if(live2d_type == 1){
-				msgType = '../message.json';
+				msgType = 'json/message.json';
 			}
 			else if(live2d_type == 2){
-				msgType = '../message_rem.json';
+				msgType = 'json/message_rem.json';
 			}
 			$.ajax({
 				cache: true,
